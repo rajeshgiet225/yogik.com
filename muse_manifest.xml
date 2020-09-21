@@ -1,0 +1,350 @@
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="yoga.com" resolutions="1x" timestamp="1600672233206">
+  <folder name="css">
+    <file name="site_global.css" crc="4038083781"/>
+    <file name="events.css" crc="4262044393" ref="events"/>
+    <file name="gym.css" crc="306230606" ref="gym"/>
+    <file name="yoga---aerobic.css" crc="221408255" ref="yoga---aerobic"/>
+    <file name="gallery.css" crc="4096228177" ref="gallery"/>
+    <file name="yoga-education.css" crc="278456104" ref="yoga-education"/>
+    <file name="contact.css" crc="3985528420" ref="contact"/>
+    <file name="index.css" crc="369877604" ref="index"/>
+    <file name="treatments.css" crc="282584339" ref="treatments"/>
+    <file name="about-us.css" crc="3902491383" ref="about-us"/>
+    <file name="thank-you.css" crc="3908830494" ref="thank-you"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="museutils.js" crc="3939489907" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="whatinput.js" crc="86476730" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="museconfig.js" crc="3936894949" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="jquery.musemenu.js" crc="4139692962" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="jquery.watch.js" crc="522499760" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="require.js" crc="4177726516" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="webpro.js" crc="3856315280" ref="about-us:gallery"/>
+    <file name="musewpslideshow.js" crc="244150766" ref="about-us:gallery"/>
+    <file name="jquery.museoverlay.js" crc="3877667098" ref="about-us:gallery"/>
+    <file name="touchswipe.js" crc="3888935200" ref="about-us:gallery"/>
+    <file name="jquery.scrolleffects.js" crc="312044820" ref="gym"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="3778575993" ref="index"/>
+    <file name="mainpimage.jpg" crc="4191316517" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="arrowmenudown.png" crc="262559161" ref="index:about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you">
+      <caption webpage="gym" alt=""/>
+      <caption webpage="gym" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="yoga-education" alt=""/>
+      <caption webpage="yoga-education" alt=""/>
+      <caption webpage="treatments" alt=""/>
+      <caption webpage="treatments" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="thank-you" alt=""/>
+      <caption webpage="thank-you" alt=""/>
+      <caption webpage="yoga---aerobic" alt=""/>
+      <caption webpage="yoga---aerobic" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="01fd.jpg" crc="347864712" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="about-us:gallery"/>
+    <file name="1hg.jpg" crc="4169168638" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="024d.jpg" crc="190710689" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="312.jpg" crc="3829946644" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="madamsp1.jpg" crc="251020429" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="saint1.jpg" crc="4119971049" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="about-us:gallery"/>
+    <file name="ylogo-u326-fr.jpg" crc="4100355249" ref="about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact:thank-you"/>
+    <file name="hgt-u348.png" crc="4186865933" ref="about-us"/>
+    <file name="mr-1.jpg" crc="6393073" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="lg.png" crc="485558696" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="m2-u459-a-fr.jpg" crc="366595098" ref="about-us"/>
+    <file name="m3-u460-a-fr.jpg" crc="3818021835" ref="about-us"/>
+    <file name="m5-u496-a-fr.jpg" crc="4096185847" ref="about-us"/>
+    <file name="m1-u502-a-fr.jpg" crc="4146670159" ref="about-us"/>
+    <file name="m4-u508-a-fr.jpg" crc="4062516401" ref="about-us"/>
+    <file name="dribble.jpg" crc="3900312861" seo="true" ref="about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="yoga-education" alt=""/>
+      <caption webpage="treatments" alt=""/>
+      <caption webpage="gym" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="yoga---aerobic" alt=""/>
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="facebook.jpg" crc="3814358492" seo="true" ref="about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="yoga-education" alt=""/>
+      <caption webpage="treatments" alt=""/>
+      <caption webpage="gym" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="yoga---aerobic" alt=""/>
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="linkedin.jpg" crc="4032340596" seo="true" ref="about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="yoga-education" alt=""/>
+      <caption webpage="treatments" alt=""/>
+      <caption webpage="gym" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="yoga---aerobic" alt=""/>
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="rss.png" crc="4144695932" seo="true" ref="about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="yoga-education" alt=""/>
+      <caption webpage="treatments" alt=""/>
+      <caption webpage="gym" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="yoga---aerobic" alt=""/>
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="pinterest.jpg" crc="340003248" seo="true" ref="about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="yoga-education" alt=""/>
+      <caption webpage="treatments" alt=""/>
+      <caption webpage="gym" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="yoga---aerobic" alt=""/>
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="ylogo.jpg" crc="4174406159" ref="about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="yoga-education" alt=""/>
+      <caption webpage="treatments" alt=""/>
+      <caption webpage="gym" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="yoga---aerobic" alt=""/>
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="twitter.jpg" crc="462041627" seo="true" ref="about-us:yoga---aerobic:yoga-education:treatments:gym:gallery:events:contact">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="yoga-education" alt=""/>
+      <caption webpage="treatments" alt=""/>
+      <caption webpage="gym" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="yoga---aerobic" alt=""/>
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="yogaaaeco.jpg" crc="3793783524" ref="yoga---aerobic">
+      <caption webpage="yoga---aerobic" alt=""/>
+    </file>
+    <file name="31-u1951-fr.jpg" crc="316945641" ref="yoga---aerobic"/>
+    <file name="jason-wong-pbnbmx6jtbm-unsplash.jpg" crc="169709041" ref="yoga-education">
+      <caption webpage="yoga-education" alt=""/>
+    </file>
+    <file name="mrs.jpg" crc="4250849506" ref="yoga-education">
+      <caption webpage="yoga-education" alt=""/>
+    </file>
+    <file name="92-naturopathy-treatment-for-obesity.jpg" crc="3843595405" ref="treatments">
+      <caption webpage="treatments" alt=""/>
+    </file>
+    <file name="damir-spanic-22l7do1coho-unsplash.jpg" crc="133826589" ref="gym">
+      <caption webpage="gym" alt=""/>
+    </file>
+    <file name="icon-1.png" crc="3873832661" ref="gym">
+      <caption webpage="gym" alt=""/>
+    </file>
+    <file name="icon-2.png" crc="4160183289" ref="gym">
+      <caption webpage="gym" alt=""/>
+    </file>
+    <file name="icon-3.png" crc="162177660" ref="gym">
+      <caption webpage="gym" alt=""/>
+    </file>
+    <file name="icon-4.png" crc="3891226562" ref="gym">
+      <caption webpage="gym" alt=""/>
+    </file>
+    <file name="victor-freitas-houjyx2k5da-unsplash.jpg" crc="293471039" ref="gym">
+      <caption webpage="gym" alt=""/>
+    </file>
+    <file name="gina-lin-m27otmeguya-unsplash.jpg" crc="401394044" ref="gym">
+      <caption webpage="gym" alt=""/>
+    </file>
+    <file name="mark-bertulfo-xkimw0pke6w-unsplash.jpg" crc="4067222715" ref="gym">
+      <caption webpage="gym" alt=""/>
+    </file>
+    <file name="01.jpg" crc="4160740748" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="02-510x382.jpg" crc="4041906298" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="03-510x382.jpg" crc="3882368833" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="3.jpg" crc="12875266" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="04-510x382.jpg" crc="442266164" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="04d.jpg" crc="4198545921" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="07.jpg" crc="3923878131" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="08.jpg" crc="4071826236" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="8-768x366.jpg" crc="4167213030" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="09-510x382.jpg" crc="3945989969" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="9.jpg" crc="3919473072" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="012-510x382.jpg" crc="4126095064" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="013-510x382.jpg" crc="4024716731" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="017.jpg" crc="393082283" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="017-510x382.jpg" crc="462228834" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="17.jpg" crc="4000526023" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="019-510x382.jpg" crc="4164795541" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="022-510x382.jpg" crc="26949314" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="023-510x382.jpg" crc="3853467115" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="1.jpg" crc="117213333" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="024.jpg" crc="3878888526" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="31.jpg" crc="4275774494" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="madamsp.jpg" crc="195838246" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="saint.jpg" crc="4189933235" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="first.svg" crc="4214889106" ref="gallery"/>
+    <file name="first_poster_u3272.png" crc="154968947" ref="gallery"/>
+    <file name="left-arrow.svg" crc="3949976111" ref="gallery"/>
+    <file name="left-arrow_poster_u3361.png" crc="4189366824" ref="gallery"/>
+    <file name="right-arrow.svg" crc="415473593" ref="gallery"/>
+    <file name="right-arrow_poster_u3282.png" crc="3934377674" ref="gallery"/>
+    <file name="last.svg" crc="3807741576" ref="gallery"/>
+    <file name="last_poster_u3363.png" crc="412417395" ref="gallery"/>
+    <file name="pasted-svg-36x36.svg" crc="3916680880" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="01-crop-u3483.jpg" crc="28489676" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="3452x339.jpg" crc="4190120467" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="04d-crop-u3871.jpg" crc="532204352" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="07-crop-u3891.jpg" crc="4068178295" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="08-crop-u3911.jpg" crc="3771239616" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="8-768x366-crop-u3931.jpg" crc="4279949331" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="9452x339.jpg" crc="426755702" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="017-crop-u4031.jpg" crc="4257353358" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="17-crop-u4071.jpg" crc="114336802" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="1452x339.jpg" crc="4144719224" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="024-crop-u3536.jpg" crc="301592952" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="31-crop-u3562.jpg" crc="4017421116" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="madamsp452x339.jpg" crc="145549696" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="saint-crop-u3614.jpg" crc="146988719" seo="true" ref="gallery">
+      <caption webpage="gallery" alt=""/>
+    </file>
+    <file name="inter.jpg" crc="33826538" ref="events">
+      <caption webpage="events" alt=""/>
+    </file>
+    <file name="omm1.jpg" crc="3787314832" ref="contact">
+      <caption webpage="contact" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="276269458" seo="true" mt="1600667823943" redirect="true"/>
+  <file name="about-us.html" crc="314790324" seo="true" mt="1600667824067" redirect="true"/>
+  <file name="yoga---aerobic.html" crc="4007309709" seo="true" mt="1600667824265" redirect="true"/>
+  <file name="yoga-education.html" crc="4064749633" seo="true" mt="1600669532083" redirect="true"/>
+  <file name="treatments.html" crc="474182680" seo="true" mt="1600667824227" redirect="true"/>
+  <file name="gym.html" crc="4106680636" seo="true" mt="1600667824026" redirect="true"/>
+  <file name="gallery.html" crc="324092680" seo="true" mt="1600667824189" redirect="true"/>
+  <file name="events.html" crc="3827885911" seo="true" mt="1600667824149" redirect="true"/>
+  <file name="contact.html" crc="4001680825" seo="true" mt="1600670805760" redirect="true"/>
+  <file name="thank-you.html" crc="3889957280" seo="true" mt="1600671817066" redirect="true"/>
+</manifest>

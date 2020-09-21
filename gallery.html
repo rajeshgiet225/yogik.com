@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-GB">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.1.386"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "jquery.musemenu.js", "jquery.watch.js", "require.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "gallery.css"], "outOfDate":[]};
+</script>
+  
+  <link rel="shortcut icon" href="images/favicon.ico?crc=3778575993"/>
+  <title>Gallery</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=4038083781"/>
+  <link rel="stylesheet" type="text/css" href="css/gallery.css?crc=4096228177" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script src="https://webfonts.creativecloud.com/source-sans-pro:n3:default.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+  <![endif]-->
+    <!--HTML Widget code-->
+  
+<style>
+.gallery-fx .SSSlideLink {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.gallery-fx .SSSlideLink div:hover::before {
+    content: " ";
+    display: block;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    float: right;
+    min-height: 10%;
+    min-width: 10%;
+    background-color: #000000;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI1ODBweCIgaGVpZ2h0PSI0MDBweCIgdmlld0JveD0iNDAgLTEwMCA1ODAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDQwIC0xMDAgNTgwIDQwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHRpdGxlPkxheWVyIDE8L3RpdGxlPjxnIGlkPSJzdmdfMjQiPjxnIGlkPSJzdmdfNSIgdHJhbnNmb3JtPSJtYXRyaXgoOC4zMzkwNyAwIDAgOC4zMzkwNyAwIDApIj48ZyBpZD0ic3ZnXzciPjxwYXRoIGlkPSJzdmdfOCIgZmlsbD0iI0ZGRkZGRiIgZD0iTTM5LjUsNC4xaC00djRoLTR2NGg0djRoNHYtNGg0di00aC00VjQuMXogTTU0LjcsMjMuOEw0OSwxOGMxLjYtMi4zLDIuNS01LDIuNS04YzAtNy42LTYuMy0xMy45LTE0LTEzLjlzLTEzLjksNi4zLTEzLjksMTRTMjkuOCwyNCwzNy41LDI0YzMsMCw1LjctMC45LDgtMi41bDUuNyw1LjdjMSwxLDIuNSwxLDMuNSwwUzU1LjcsMjQuNyw1NC43LDIzLjh6IE0zNy41LDIwYy01LjUsMC0xMC00LjUtMTAtMTBzNC41LTkuOSwxMC05LjlzMTAsNC41LDEwLDEwUzQzLDIwLDM3LjUsMjB6Ii8+PC9nPjwvZz48ZyBpZD0ic3ZnXzkiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTAiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTEiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTIiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTMiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTQiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTUiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTYiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTciIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTgiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMTkiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMjAiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMjEiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMjIiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjxnIGlkPSJzdmdfMjMiIHRyYW5zZm9ybT0ibWF0cml4KDguMzM5MDcgMCAwIDguMzM5MDcgMCAwKSI+PC9nPjwvZz48L2c+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.gallery-fx .SSSlideLink img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.gallery-fx .SSSlideLink img:hover {
+-webkit-transform:scale(1.25);-moz-transform:scale(1.25);-ms-transform:scale(1.25);-o-transform:scale(1.25);transform:scale(1.25);
+    
+    -webkit-filter:blur(20px);-moz-filter:blur(20px);-ms-filter:blur(20px);-o-filter:blur(20px);filter:blur(20px);
+}
+.gallery-fx .SSSlideCaption, .gallery-fx .SSSlideLink div:hover::before {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+}
+</style>
+
+	
+    
+<style>
+canvas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+</style>
+
+ </head>
+ <body>
+
+  <!--HTML Widget code-->
+  
+    
+  
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="ppu2981"><!-- column -->
+    <div class="clearfix colelem" id="pu2981"><!-- group -->
+     <div class="browser_width grpelem" id="u2981-bw">
+      <div id="u2981"><!-- group -->
+       <div class="clearfix" id="u2981_align_to_page">
+        <div class="museBGSize rounded-corners grpelem" id="u2983"><!-- simple frame --></div>
+        <div class="clearfix grpelem" id="u2982-4"><!-- content -->
+         <p>Call. 9437267278</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <nav class="MenuBar clearfix grpelem" id="menuu2984"><!-- horizontal box -->
+      <div class="MenuItemContainer clearfix grpelem" id="u3020"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox rounded-corners clearfix colelem" id="u3021" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3023-4"><!-- content --><p>Home</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u3013"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox rounded-corners clearfix colelem" id="u3014" href="about-us.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3015-4"><!-- content --><p>About Us</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u2985"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox rounded-corners clearfix colelem" id="u2986" href="yoga---aerobic.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u2988-4"><!-- content --><p>Yoga &amp; Aerobic</p></div><div class="grpelem" id="u2989"><!-- content --></div></a>
+       <div class="SubMenu MenuLevel1 clearfix" id="u2990"><!-- vertical box -->
+        <ul class="SubMenuView clearfix colelem" id="u2991"><!-- vertical box -->
+         <li class="MenuItemContainer clearfix colelem" id="u2999"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu rounded-corners clearfix grpelem" id="u3002" href="yoga-education.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3003-4"><!-- content --><div id="u3003-3"><p>Yoga Education</p></div></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u2992"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu rounded-corners clearfix grpelem" id="u2993" href="treatments.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u2995-4"><!-- content --><div id="u2995-3"><p>Treatments</p></div></div></a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u3027"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox rounded-corners clearfix colelem" id="u3030" href="gym.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3033-4"><!-- content --><p>Gym</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u3034"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox rounded-corners clearfix colelem" id="u3035" href="gallery.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3038-4"><!-- content --><p>Gallery</p></div><div class="grpelem" id="u3037"><!-- content --></div></a>
+       <div class="SubMenu MenuLevel1 clearfix" id="u3039"><!-- vertical box -->
+        <ul class="SubMenuView rounded-corners clearfix colelem" id="u3040"><!-- vertical box -->
+         <li class="MenuItemContainer clearfix colelem" id="u3041"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu rounded-corners clearfix grpelem" id="u3042" href="events.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3045-4"><!-- content --><div id="u3045-3"><p>Events</p></div></div></a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u3006"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox rounded-corners clearfix colelem" id="u3007" href="contact.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3008-4"><!-- content --><p>Contact</p></div></a>
+      </div>
+     </nav>
+    </div>
+    <div class="clearfix colelem" id="pslideshowu3182"><!-- group -->
+     <div class="SlideShowWidget clearfix widget_invisible grpelem" id="slideshowu3182" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+      <div class="clearfix" id="pu3184"><!-- group -->
+       <div class="popup_anchor" data-col-pos="0" id="u3184popup">
+        <div class="SlideShowContentPanel rgba-background clearfix" data-col-pos="0" id="u3184" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- stack box -->
+         <div class="SSSlide clip_frame grpelem" data-col-pos="0" id="u3492" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="0" id="u3492_img" data-src="images/01.jpg?crc=4160740748" src="images/blank.gif?crc=4208392903" alt="" data-width="1114" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="1" id="u3797" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="1" id="u3797_img" data-src="images/02-510x382.jpg?crc=4041906298" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="2" id="u3817" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="2" id="u3817_img" data-src="images/03-510x382.jpg?crc=3882368833" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="3" id="u3837" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="3" id="u3837_img" data-src="images/3.jpg?crc=12875266" src="images/blank.gif?crc=4208392903" alt="" data-width="836" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="4" id="u3857" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="4" id="u3857_img" data-src="images/04-510x382.jpg?crc=442266164" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="5" id="u3877" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="5" id="u3877_img" data-src="images/04d.jpg?crc=4198545921" src="images/blank.gif?crc=4208392903" alt="" data-width="1104" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="6" id="u3897" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="6" id="u3897_img" data-src="images/07.jpg?crc=3923878131" src="images/blank.gif?crc=4208392903" alt="" data-width="1104" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="7" id="u3917" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="7" id="u3917_img" data-src="images/08.jpg?crc=4071826236" src="images/blank.gif?crc=4208392903" alt="" data-width="1104" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="8" id="u3937" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="8" id="u3937_img" data-src="images/8-768x366.jpg?crc=4167213030" src="images/blank.gif?crc=4208392903" alt="" data-width="768" data-height="366"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="9" id="u3957" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="9" id="u3957_img" data-src="images/09-510x382.jpg?crc=3945989969" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="10" id="u3977" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="10" id="u3977_img" data-src="images/9.jpg?crc=3919473072" src="images/blank.gif?crc=4208392903" alt="" data-width="836" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="11" id="u3997" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="11" id="u3997_img" data-src="images/012-510x382.jpg?crc=4126095064" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="12" id="u4017" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="12" id="u4017_img" data-src="images/013-510x382.jpg?crc=4024716731" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="13" id="u4037" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="13" id="u4037_img" data-src="images/017.jpg?crc=393082283" src="images/blank.gif?crc=4208392903" alt="" data-width="1104" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="14" id="u4057" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="14" id="u4057_img" data-src="images/017-510x382.jpg?crc=462228834" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="15" id="u4077" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="15" id="u4077_img" data-src="images/17.jpg?crc=4000526023" src="images/blank.gif?crc=4208392903" alt="" data-width="1114" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="16" id="u4097" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="16" id="u4097_img" data-src="images/019-510x382.jpg?crc=4164795541" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="17" id="u4117" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="17" id="u4117_img" data-src="images/022-510x382.jpg?crc=26949314" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="18" id="u4137" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="18" id="u4137_img" data-src="images/023-510x382.jpg?crc=3853467115" src="images/blank.gif?crc=4208392903" alt="" data-width="510" data-height="382"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="19" id="u3518" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="19" id="u3518_img" data-src="images/1.jpg?crc=117213333" src="images/blank.gif?crc=4208392903" alt="" data-width="836" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="20" id="u3544" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="20" id="u3544_img" data-src="images/024.jpg?crc=3878888526" src="images/blank.gif?crc=4208392903" alt="" data-width="1104" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="21" id="u3570" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="21" id="u3570_img" data-src="images/31.jpg?crc=4275774494" src="images/blank.gif?crc=4208392903" alt="" data-width="1045" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="22" id="u3596" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="22" id="u3596_img" data-src="images/madamsp.jpg?crc=195838246" src="images/blank.gif?crc=4208392903" alt="" data-width="836" data-height="627"/>
+         </div>
+         <div class="SSSlide invi clip_frame grpelem" data-col-pos="23" id="u3622" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block ImageInclude" data-col-pos="23" id="u3622_img" data-src="images/saint.jpg?crc=4189933235" src="images/blank.gif?crc=4208392903" alt="" data-width="1114" data-height="627"/>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" data-col-pos="1" id="u3225popup">
+        <div class="SlideShowCaptionPanel clearfix" data-col-pos="1" id="u3225" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- stack box -->
+         <div class="SSSlideCaption clearfix grpelem" data-col-pos="0" id="u3500-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here2</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="1" id="u3803-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here4</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="2" id="u3823-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here5</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="3" id="u3843-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here6</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="4" id="u3863-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here7</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="5" id="u3883-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here8</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="6" id="u3903-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here9</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="7" id="u3923-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here10</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="8" id="u3943-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here11</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="9" id="u3963-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here12</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="10" id="u3983-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here13</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="11" id="u4003-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here14</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="12" id="u4023-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here15</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="13" id="u4043-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here16</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="14" id="u4063-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here17</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="15" id="u4083-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here18</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="16" id="u4103-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here19</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="17" id="u4123-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here20</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="18" id="u4143-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here21</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="19" id="u3526-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here3</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="20" id="u3552-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here4</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="21" id="u3578-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here5</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="22" id="u3604-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here6</p>
+         </div>
+         <div class="SSSlideCaption invi clearfix grpelem" data-col-pos="23" id="u3630-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>image caption goes here7</p>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" data-col-pos="2" id="u3205-3popup">
+        <div class="SSFirstButton museBGSize clearfix" data-col-pos="2" id="u3205-3" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+         <p>&nbsp;</p>
+        </div>
+       </div>
+       <div class="popup_anchor" data-col-pos="3" id="u3204-3popup">
+        <div class="SSPreviousButton museBGSize clearfix" data-col-pos="3" id="u3204-3" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+         <p>&nbsp;</p>
+        </div>
+       </div>
+       <div class="popup_anchor" data-col-pos="4" id="u3238-3popup">
+        <div class="SSNextButton museBGSize clearfix" data-col-pos="4" id="u3238-3" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+         <p>&nbsp;</p>
+        </div>
+       </div>
+       <div class="popup_anchor" data-col-pos="5" id="u3183-3popup">
+        <div class="SSLastButton museBGSize clearfix" data-col-pos="5" id="u3183-3" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+         <p>&nbsp;</p>
+        </div>
+       </div>
+       <div class="popup_anchor" data-col-pos="7" id="u3235popup">
+        <div class="SSCloseButton popup_element clearfix" data-col-pos="7" id="u3235"><!-- group -->
+         <div class="clip_frame grpelem" id="u3236" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- svg -->
+          <img class="svg" id="u3237" src="images/pasted-svg-36x36.svg?crc=3916680880" width="26" height="33" alt=""/>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="popup_anchor" data-col-pos="8" id="u3206popup">
+       <div class="SSSlideLinks gallery-fx clearfix" data-col-pos="8" id="u3206" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- horizontal-rows box -->
+        <div class="clearfix colelem" id="pu3483"><!-- group -->
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="0" id="u3483" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="0" id="u3483_img" src="images/01-crop-u3483.jpg?crc=28489676" alt="" width="382" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="1" id="u3791" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="1" id="u3791_img" src="images/02-510x382.jpg?crc=4041906298" alt="" width="453" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="2" id="u3811" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="2" id="u3811_img" src="images/03-510x382.jpg?crc=3882368833" alt="" width="453" height="339"/>
+         </div>
+        </div>
+        <div class="clearfix colelem" id="pu3831"><!-- group -->
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="3" id="u3831" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="3" id="u3831_img" src="images/3452x339.jpg?crc=4190120467" alt="" width="452" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="4" id="u3851" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="4" id="u3851_img" src="images/04-510x382.jpg?crc=442266164" alt="" width="453" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="5" id="u3871" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="5" id="u3871_img" src="images/04d-crop-u3871.jpg?crc=532204352" alt="" width="382" height="339"/>
+         </div>
+        </div>
+        <div class="clearfix colelem" id="pu3891"><!-- group -->
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="6" id="u3891" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="6" id="u3891_img" src="images/07-crop-u3891.jpg?crc=4068178295" alt="" width="382" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="7" id="u3911" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="7" id="u3911_img" src="images/08-crop-u3911.jpg?crc=3771239616" alt="" width="382" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="8" id="u3931" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="8" id="u3931_img" src="images/8-768x366-crop-u3931.jpg?crc=4279949331" alt="" width="382" height="339"/>
+         </div>
+        </div>
+        <div class="clearfix colelem" id="pu3951"><!-- group -->
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="9" id="u3951" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="9" id="u3951_img" src="images/09-510x382.jpg?crc=3945989969" alt="" width="453" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="10" id="u3971" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="10" id="u3971_img" src="images/9452x339.jpg?crc=426755702" alt="" width="452" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="11" id="u3991" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="11" id="u3991_img" src="images/012-510x382.jpg?crc=4126095064" alt="" width="453" height="339"/>
+         </div>
+        </div>
+        <div class="clearfix colelem" id="pu4011"><!-- group -->
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="12" id="u4011" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="12" id="u4011_img" src="images/013-510x382.jpg?crc=4024716731" alt="" width="453" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="13" id="u4031" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="13" id="u4031_img" src="images/017-crop-u4031.jpg?crc=4257353358" alt="" width="382" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="14" id="u4051" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="14" id="u4051_img" src="images/017-510x382.jpg?crc=462228834" alt="" width="453" height="339"/>
+         </div>
+        </div>
+        <div class="clearfix colelem" id="pu4071"><!-- group -->
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="15" id="u4071" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="15" id="u4071_img" src="images/17-crop-u4071.jpg?crc=114336802" alt="" width="382" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="16" id="u4091" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="16" id="u4091_img" src="images/019-510x382.jpg?crc=4164795541" alt="" width="453" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="17" id="u4111" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="17" id="u4111_img" src="images/022-510x382.jpg?crc=26949314" alt="" width="453" height="339"/>
+         </div>
+        </div>
+        <div class="clearfix colelem" id="pu4131"><!-- group -->
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="18" id="u4131" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="18" id="u4131_img" src="images/023-510x382.jpg?crc=3853467115" alt="" width="453" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="19" id="u3510" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="19" id="u3510_img" src="images/1452x339.jpg?crc=4144719224" alt="" width="452" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="20" id="u3536" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="20" id="u3536_img" src="images/024-crop-u3536.jpg?crc=301592952" alt="" width="382" height="339"/>
+         </div>
+        </div>
+        <div class="clearfix colelem" id="pu3562"><!-- group -->
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="21" id="u3562" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="21" id="u3562_img" src="images/31-crop-u3562.jpg?crc=4017421116" alt="" width="382" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame clearfix grpelem" data-col-pos="22" id="u3588" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" data-col-pos="22" id="u3588_img" src="images/madamsp452x339.jpg?crc=145549696" alt="" width="452" height="339"/>
+         </div>
+         <div class="SSSlideLink clip_frame grpelem" data-col-pos="23" id="u3614" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" data-col-pos="23" id="u3614_img" src="images/saint-crop-u3614.jpg?crc=146988719" alt="" width="382" height="339"/>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="size_fixed grpelem" id="u3239" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- custom html -->
+      
+    
+     </div>
+    </div>
+   </div>
+   <div class="verticalspacer" data-offset-top="2944" data-content-above-spacer="2944" data-content-below-spacer="1292" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+   <div class="clearfix grpelem" id="pu4203"><!-- column -->
+    <div class="browser_width colelem" id="u4203-bw">
+     <div class="size_browser_width" id="u4203"><!-- custom html -->
+      
+	 <!-- This Adobe Muse widget was created by the team at MuseFree.com -->
+	<canvas></canvas>
+	
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u5279-bw">
+     <div class="gradient" id="u5279"><!-- column -->
+      <div class="clearfix" id="u5279_align_to_page">
+       <div class="position_content" id="u5279_position_content">
+        <div class="rounded-corners colelem" id="u5290"><!-- simple frame --></div>
+        <div class="clearfix colelem" id="pppu5295-13"><!-- group -->
+         <div class="clearfix grpelem" id="ppu5295-13"><!-- column -->
+          <div class="clearfix colelem" id="pu5295-13"><!-- group -->
+           <div class="clearfix grpelem" id="u5295-13"><!-- content -->
+            <p id="u5295-2">Contact to:</p>
+            <p>Phone:+91 9437267278,</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +91 9861161573</p>
+            <p>&nbsp;</p>
+            <p>E-mail: info@incysyoga.org</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; chittaranjaincys@gmail.com</p>
+           </div>
+           <div class="clip_frame grpelem" id="u5280" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+            <img class="block" id="u5280_img" src="images/dribble.jpg?crc=3900312861" alt="" width="25" height="25"/>
+           </div>
+           <div class="clearfix grpelem" id="ppu5282"><!-- column -->
+            <div class="clearfix colelem" id="pu5282"><!-- group -->
+             <a class="nonblock nontext clip_frame grpelem" id="u5282" href="https://www.facebook.com/incys/" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image --><img class="block" id="u5282_img" src="images/facebook.jpg?crc=3814358492" alt="" width="25" height="25"/></a>
+             <div class="clip_frame grpelem" id="u5284" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+              <img class="block" id="u5284_img" src="images/linkedin.jpg?crc=4032340596" alt="" width="25" height="25"/>
+             </div>
+             <div class="clip_frame grpelem" id="u5288" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+              <img class="block" id="u5288_img" src="images/rss.png?crc=4144695932" alt="" width="25" height="25"/>
+             </div>
+             <div class="clip_frame grpelem" id="u5286" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+              <img class="block" id="u5286_img" src="images/pinterest.jpg?crc=340003248" alt="" width="25" height="25"/>
+             </div>
+            </div>
+            <div class="museBGSize colelem" id="u5293"><!-- simple frame --></div>
+           </div>
+           <a class="nonblock nontext clip_frame grpelem" id="u5291" href="https://twitter.com/Incysyoga" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image --><img class="block" id="u5291_img" src="images/twitter.jpg?crc=462041627" alt="" width="25" height="25"/></a>
+          </div>
+          <div class="clearfix colelem" id="u5294-5"><!-- content -->
+           <p>© 2020 All Rights Reserved By Incysyoga | Designed By <span id="u5294-2">rpLex Techno</span></p>
+          </div>
+         </div>
+         <div class="clearfix grpelem" id="pu5616-5"><!-- column -->
+          <div class="clearfix colelem" id="u5616-5"><!-- content -->
+           <p>&nbsp;</p>
+           <p id="u5616-3">Courses we provide :</p>
+          </div>
+          <div class="clearfix colelem" id="u5296-20"><!-- content -->
+           <p>Yoga Foundation Course</p>
+           <p>Yoga Instructor's Course (YIC)</p>
+           <p>Yoga Teacher's Training course (YTTC)</p>
+           <p>Diploma in Naturopathy</p>
+           <p>Diploma in Yoga</p>
+           <p>MA in Yoga</p>
+           <p>Daily Yoga Classes</p>
+           <p>OPD Treatment</p>
+           <p>Naturopathy Treatment</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+</script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide whether to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
+k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){f(!0)},5E3):f()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musepolyfill.bgsize","jquery.watch","jquery.musemenu","webpro","musewpslideshow","jquery.museoverlay","touchswipe"],function(c){var $ = c;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('#slideshowu3182', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3000,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:true,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu3182 */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4177726516" type="text/javascript" async data-main="scripts/museconfig.js?crc=3936894949" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+            
+   <script>
+$( ".SSSlideLink img" ).wrap( "<div class='wrap'></div>" );
+   </script>
+   
+    
+        <script>
+!function(){function i(){this.x=this.random(0,n.width),this.y=0,s[o]=this,this.id=o,this.radius=this.random(0,4),this.vy=this.random(0,10),o++,this.grav=.1,this.life=0,this.max=80,this.color="hsla("+this.random(0,30)+", 100%, 50%, 1)"}function t(){e.fillStyle="rgba(0,0,0,.08)",e.fillRect(0,0,n.width,n.height);for(var o=0;r>o;o++)new i;for(var o in s)s[o].draw();h=window.requestAnimationFrame(t)}var h,n=document.querySelector("canvas"),e=n.getContext("2d"),r=6,s=[],o=0;n.width=window.innerWidth,n.height=window.innerHeight,i.prototype.random=function(i,t){return Math.random()*(t-i)+i},i.prototype.draw=function(){this.y+=this.vy,this.vy+=this.grav,this.x+=this.random(-1,1),e.fillStyle=this.color,e.beginPath(),e.moveTo(this.x,this.y),e.arc(this.x,this.y,this.radius,0,2*Math.PI,!1),e.fill(),this.life++,this.life>=this.max&&delete s[this.id]},t(),window.addEventListener("resize",function(){n.width=window.innerWidth,n.height=window.innerHeight(),e.fillStyle="rgba(0,0,0,.1)",e.fillRect(0,0,n.width,n.height)})}();
+        </script>
+				
+   </body>
+</html>
